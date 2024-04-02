@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woody</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body style="background-color: rgb(31, 41, 55)">
+    <div class="content-form">
+      <h3 style="color: white" class="mb-4 text-xl font-medium">Categorías</h3>
+      <form class="espaciado-form" method="post" id="form-cate">
+        <div class="flexible-form">
+          <div class="flexible-item-form">
+            <label for="nombre" class="label-form">Nombre</label>
+            <input
+              type="text"
+              class="input-form"
+              placeholder="Nombre de la categoría"
+              autofocus
+              id="name-cate"
+              required
+            />
+          </div>
+        </div>
+        <div class="margin-form">
+          <label for="descripcion" class="label-form">Descripción</label>
+          <textarea
+            name="descripcion"
+            id="description-cate"
+            class="text-tarea-form"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <button class="hidden boton-form">Enviando...</button>
+          <button type="submit" class="boton-form">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <script src="../js/variables.js"></script>
+    <script src="../js/categorias/createCate.js"></script>
+    <script src="../js/categorias/updateCate.js"></script>
+  </body>
+</html>

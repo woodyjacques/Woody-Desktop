@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woody</title>
+  <link rel="stylesheet" href="../css/output.css" />
+  <link rel="stylesheet" href="../css/form.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body style="background-color: rgb(31, 41, 55)">
+  <div class="content-form">
+    <h3 style="color: white" class="mb-4 text-xl font-medium">Libros</h3>
+    <form class="espaciado-form" method="post" id="form-book">
+
+      <div class="flexible-form">
+        <div class="flexible-item-form">
+          <label for="nombre" class="label-form">Nombre</label>
+          <input type="text" class="input-form" placeholder="Nombre del libro" autofocus id="name-book"
+            required />
+        </div>
+      </div>
+
+      <div class="margin-form">
+        <label for="descripcion" class="label-form">Descripción</label>
+        <textarea name="descripcion" id="description-book" class="text-tarea-form" required></textarea>
+      </div>
+
+      <div class="flexible-form">
+        <div class="flexible-item-form">
+          <label for="nombre" class="label-form">Precio</label>
+          <input type="number" class="input-form" placeholder="Precio" autofocus id="price-book" required />
+        </div>
+        <div class="flexible-item-form">
+          <label for="categorias" class="label-form">Categorías</label>
+          <select class="input-form" id="categories" required>
+            <option value="">Seleccione una categoría</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flexible-form">
+        <div class="flexible-item-form">
+          <label for="nombre" class="label-form">Compra</label>
+          <input type="text" class="input-form" placeholder="Link de compra" autofocus id="linkCompra-book"/>
+        </div>
+        <div class="flexible-item-form">
+          <label for="nombre" class="label-form">Leer</label>
+          <input type="text" class="input-form" placeholder="Link para leer" autofocus id="linkLeer-book"/>
+        </div>
+      </div>
+
+      <div class="flexible-form">
+        <div class="flexible-item-form">
+          <label for="nombre" class="label-form">Escuchar</label>
+          <input type="text" class="input-form" placeholder="Link para escuchar" autofocus id="linkEscuchar-book" />
+        </div>
+        <div class="flexible-item-form">
+          <label for="nombre" class="label-form">Imagen</label>
+          <input type="text" class="input-form" placeholder="Link de la imagen" autofocus id="linkImagen-book"
+            required />
+        </div>
+      </div>
+
+      <div>
+        <button class="hidden boton-form">Enviando...</button>
+        <button type="submit" class="boton-form">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <script src="../js/variables.js"></script>
+  <script src="../js/books/createBook.js"></script>
+  <script src="../js/books/updateBook.js"></script>
+  <script src="../js/categorias/obtenerCate.js"></script>
+</body>
+
+</html>

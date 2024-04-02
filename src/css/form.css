@@ -1,0 +1,88 @@
+.content-form {
+    padding: 1.5rem 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .content-form {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  .espaciado-form {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .flexible-form {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+  
+  .flexible-item-form {
+    flex: 1;
+    margin-right: 0.5rem;
+  }
+  
+  .margin-form {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .label-form {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .input-form {
+    background-color: #6b7280;
+    outline-color: rgb(31, 41, 55);
+    color: #fff;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    width: 100%;
+    padding: 0.625rem;
+    border: 2px solid white;
+  }
+  
+  .text-tarea-form {
+    border: 2px solid white;
+    background-color: #6b7280;
+    color: #fff;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    outline-color: rgb(31, 41, 55);
+    outline-style: 1 solid;
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+  }
+  
+  .boton-form {
+    margin-top: 1.25rem;
+    width: 98%;
+    color: #fff;
+    background-color: #2563eb;
+    transition: background-color 0.3s;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+  }
+  
+  .boton-form:hover {
+    background-color: #1e40af;
+  }
+  
+  .boton-form:focus {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #60a5fa;
+    outline-offset: -1px;
+  }
+  
